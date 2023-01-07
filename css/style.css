@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.left-navigation .burger {
+  width: 50px;
+  height: 50px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin: 10px 0 0 20px;
+}
+
+.line {
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+nav {
+  background-color: black;
+  position: relative;
+}
+
+.left-navigation .company-name {
+  font-size: 35px;
+  color: white;
+  padding: 15px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.checkbox-hack {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  visibility: hidden;
+}
+
+.left-navigation {
+  display: flex;
+}
+
+.right-navigation ul li {
+  list-style: none;
+  font-size: 20px;
+  padding: 25px;
+  color: white;
+}
+.right-navigation ul li:hover {
+  cursor: pointer;
+}
+
+.right-navigation ul {
+  display: flex;
+}
+
+nav .side-nav {
+  position: absolute;
+  width: 40vw;
+  height: 100vh;
+  background-color: red;
+  left: -90vh;
+  transition: 1s;
+}
+
+.side-nav ul li {
+  font-size: 20px;
+  color: white;
+  margin: 30px;
+  list-style: none;
+}
+
+.side-nav .close-side-nav {
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  /* background-color: blue; */
+  padding-top: 20px;
+}
+
+.side-nav .close-side-nav .line:nth-child(2) {
+  transform-origin: center;
+  transform: rotate(45deg);
+}
+.side-nav .close-side-nav .line:nth-child(3) {
+  transform-origin: center;
+  transform: rotate(-45deg);
+  margin-top: -8px;
+}
+
+.side-nav {
+  display: block;
+}
+
+#burger-checkbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+#sidenav-close-checkbox {
+  position: absolute;
+  top: -2px;
+  width: 120%;
+  height: 120%;
+  opacity: 0;
+  z-index: 99;
+}
+
+#burger-checkbox:hover {
+  cursor: pointer;
+}
+
+.min-width-display {
+  display: none;
+}
+#sidenav-close-checkbox:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 520px) {
+  .left-navigation .company-name {
+    font-size: 30px;
+    color: white;
+    padding: 15px;
+  }
+  .side-nav ul li {
+    font-size: 15px;
+    color: white;
+    margin: 30px;
+    list-style: none;
+  }
+  .right-navigation {
+    display: none;
+  }
+  .min-width-display {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 597px) and (min-width: 520px) {
+  .left-navigation .company-name {
+    font-size: 30px;
+    color: white;
+    padding: 15px;
+  }
+  .right-navigation ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 20px;
+  }
+}
