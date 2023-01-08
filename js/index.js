@@ -20,3 +20,12 @@ burgercheckbox.addEventListener('change', () => {
 
     }
 })
+
+function thumbs(x) {
+    const v = document.getElementById(x);
+    if (v.style.color == 'red') {
+        v.style.color = 'black'
+    } else {
+        v.style.color = 'red';
+    }
+}
