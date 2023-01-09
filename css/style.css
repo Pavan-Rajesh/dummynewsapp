@@ -15,6 +15,22 @@
   position: relative;
   margin: 10px 0 0 20px;
 }
+.search-bar-input {
+  width: 70%;
+  height: 100%;
+  font-size: 20px;
+}
+
+.search-bar {
+  width: 200px;
+  height: 40px;
+  /* background-color: red; */
+  position: absolute;
+  right: 0px;
+  top: 70px;
+  z-index: 9999;
+  display: none;
+}
 
 .line {
   width: 30px;
@@ -232,7 +248,7 @@ p {
 
 .top-stories {
   width: 100%;
-  height: 70px;
+  height: 80px;
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -256,20 +272,32 @@ p {
   font-weight: bold;
 }
 
+#search-bar-min {
+  position: absolute;
+  bottom: 5px;
+  top: 550px;
+}
+
+.scroll-link {
+  text-decoration: none;
+  color: white;
+}
+
 .money {
   color: #fb2576;
   font-weight: 500;
   text-decoration: none;
 }
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 720px) {
   .left-navigation .company-name {
     font-size: 30px;
     color: white;
     padding: 15px;
   }
+
   .side-nav ul li {
     font-size: 15px;
-    color: white;
+    color: black;
     margin: 30px;
     list-style: none;
   }
@@ -296,6 +324,7 @@ p {
     width: 200px;
     height: 150px;
     margin: 10px;
+    float: none;
   }
 }
 
