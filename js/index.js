@@ -21,11 +21,29 @@ burgercheckbox.addEventListener('change', () => {
     }
 })
 
-function thumbs(x) {
+function thumbsup(x) {
+    var t = x.slice(2, 6);
     const v = document.getElementById(x);
-    if (v.style.color == 'red') {
-        v.style.color = 'black'
-    } else {
-        v.style.color = 'red';
+    var y = 'do' + t;
+    const z = document.getElementById(y);
+    if (z.style.filter = 'grayscale(0%)') {
+        z.style.filter = 'grayscale(100%)'
+    }
+    if (v.style.filter = 'grayscale(100%)') {
+        v.style.filter = 'grayscale(0%)'
+    }
+}
+
+function thumbsdown(x) {
+    var t = x.slice(2, 6);
+    const v = document.getElementById(x);
+    var y = 'up' + t;
+    const z = document.getElementById(y);
+    if (z.style.filter = 'grayscale(0%)') {
+        z.style.filter = 'grayscale(100%)'
+    }
+
+    if (v.style.filter = 'grayscale(100%)') {
+        v.style.filter = 'grayscale(0%)'
     }
 }
