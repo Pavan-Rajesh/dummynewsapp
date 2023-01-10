@@ -54,8 +54,10 @@ search.addEventListener('click', function () {
     const searchbar = document.getElementById('search-bar');
     if (searchbar.style.display == 'none') {
         searchbar.style.display = 'block';
+        // searchbar.style.opacity = '1';
     } else {
         searchbar.style.display = 'none';
+        // searchbar.style.opacity = '0';
     }
 })
 
@@ -71,6 +73,7 @@ searchmin.addEventListener('click', function () {
     const searchbarmin = document.getElementById('search-bar-min');
     if (searchbarmin.style.display == 'none') {
         searchbarmin.style.display = 'block';
+
     } else {
         searchbarmin.style.display = 'none';
     }

@@ -15,6 +15,8 @@
   position: relative;
   margin: 10px 0 0 20px;
 }
+
+/* searchbar style */
 .search-bar-input {
   width: 70%;
   height: 100%;
@@ -24,14 +26,19 @@
 .search-bar {
   width: 200px;
   height: 40px;
-  /* background-color: red; */
+  background-color: #ffc93c;
   position: absolute;
   right: 0px;
   top: 70px;
   z-index: 9999;
   display: none;
+  padding: 20px;
+  border-radius: 20px;
 }
 
+/* searchbar style */
+
+/* burger lines */
 .line {
   width: 30px;
   height: 5px;
@@ -39,28 +46,34 @@
   margin: 3px;
   border-radius: 10px;
 }
+/* burger lines */
 
+/* navigation bar */
 nav {
   background-color: #0081c9;
   position: relative;
+
+  display: flex;
+  justify-content: space-between;
 }
 
+/* navigation divided to two parts left and right nav left nav consists of company name and burger and right nav consists of three things */
 .left-navigation .company-name {
   font-size: 35px;
   color: white;
   padding: 15px;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-}
-.checkbox-hack {
+/* .navbar {
+} */
+
+/* we use checkbox for opening and closing the menu  */
+/* .checkbox-hack {
   width: 100%;
   height: 100%;
   position: absolute;
   visibility: hidden;
-}
+} */
 
 .left-navigation {
   display: flex;
@@ -80,6 +93,8 @@ nav {
   display: flex;
 }
 
+/* side nav which opens only when we press the visible hamburger and that is named as class with sidenav  */
+
 nav .side-nav {
   position: absolute;
   width: 25vw;
@@ -88,6 +103,7 @@ nav .side-nav {
   left: -90vh;
   transition: 1s;
   z-index: 999;
+  display: block;
 }
 
 .side-nav ul li {
@@ -107,6 +123,8 @@ nav .side-nav {
   padding-top: 20px;
 }
 
+/* for closing the side navgation bar we should have icon that is cross symbol  */
+
 .side-nav .close-side-nav .line:nth-child(2) {
   transform-origin: center;
   transform: rotate(45deg);
@@ -115,10 +133,6 @@ nav .side-nav {
   transform-origin: center;
   transform: rotate(-45deg);
   margin-top: -8px;
-}
-
-.side-nav {
-  display: block;
 }
 
 #burger-checkbox {
@@ -136,16 +150,16 @@ nav .side-nav {
   z-index: 99;
 }
 
-#burger-checkbox:hover {
+#burger-checkbox:hover,
+#sidenav-close-checkbox:hover {
   cursor: pointer;
 }
 
 .min-width-display {
   display: none;
 }
-#sidenav-close-checkbox:hover {
-  cursor: pointer;
-}
+
+/* we put the whole news within the container  */
 
 .news-container {
   padding: 10px;
@@ -156,6 +170,7 @@ nav .side-nav {
   box-shadow: 5px 5px 30px 5px rgb(92, 84, 74);
   border: 2px solid black;
 }
+
 img:hover {
   cursor: pointer;
 }
@@ -186,6 +201,8 @@ p {
   /* margin: 20px 0 20px 37px; */
   border-radius: 20px;
 }
+
+/* the right section combines of the likes ,share and the image present in it  */
 .right-section {
   width: 350px;
   height: 250px;
@@ -197,6 +214,8 @@ p {
   align-items: center;
   margin: 20px;
 }
+
+/* the likes section describes the bottom of the image part that is the icons with like dislike and share instead of star we can keep any icon */
 .likes-section {
   width: 100%;
   height: 40px;
@@ -207,6 +226,8 @@ p {
   box-sizing: border-box;
   padding-top: 10px;
 }
+
+/* styling the links that are present in the middle of the paragraph */
 .middle-link {
   color: #3c79f5;
   text-decoration: none;
@@ -220,6 +241,7 @@ p {
   margin: 80px 0 0 20px;
 }
 
+/* the live blinking icon present in the navbar  */
 .live {
   width: 25px;
   height: 25px;
@@ -231,6 +253,7 @@ p {
   margin-top: -10px;
 }
 
+/* this is the animation for live blinking button  */
 @keyframes live {
   0% {
     filter: grayscale(100%);
@@ -246,6 +269,7 @@ p {
   }
 }
 
+/* the marquee scroll; for the things that are going from left to right  */
 .top-stories {
   width: 100%;
   height: 80px;
@@ -254,11 +278,15 @@ p {
   justify-content: space-between;
   align-items: center;
 }
+
+/* this is the label that is present at the left of the marquee  */
 .top-stories-label {
   color: white;
   margin-left: 40px;
   font-weight: bold;
 }
+
+/* the items that are present in the marquee  */
 .scroller-items {
   color: white;
   background-color: #0081c9;
@@ -288,6 +316,8 @@ p {
   font-weight: 500;
   text-decoration: none;
 }
+
+/* media queries for mobile view  */
 @media only screen and (max-width: 720px) {
   .left-navigation .company-name {
     font-size: 30px;
