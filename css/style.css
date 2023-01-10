@@ -109,9 +109,19 @@ nav .side-nav {
 .side-nav ul li {
   font-size: 20px;
   color: black;
-  margin: 30px;
+  margin: 20px;
+  padding: 10px;
   list-style: none;
   font-weight: 500;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  box-shadow: 2px 2px 2px 2px black;
+  width: 60%;
+}
+
+.side-nav ul li a {
+  text-decoration: none;
+  color: white;
 }
 
 .side-nav .close-side-nav {
@@ -163,7 +173,7 @@ nav .side-nav {
 
 .news-container {
   padding: 10px;
-  background-color: rgb(205, 184, 157);
+  background-color: rgb(220, 202, 180);
   /* background-color: rgb(164, 246, 255); */
   border-radius: 20px;
   margin: 10px 20px 70px 20px;
@@ -200,6 +210,7 @@ p {
   height: 100%;
   /* margin: 20px 0 20px 37px; */
   border-radius: 20px;
+  border: 3px solid black;
 }
 
 /* the right section combines of the likes ,share and the image present in it  */
@@ -316,6 +327,24 @@ p {
   font-weight: 500;
   text-decoration: none;
 }
+
+/* scrollbar decoration  */
+body::-webkit-scrollbar {
+  width: 20px;
+}
+body::-webkit-scrollbar-track {
+  background: black;
+}
+body::-webkit-scrollbar-thumb {
+  background: #0081c9;
+  border-radius: 2px;
+  border: 5px solid black;
+}
+
+/* body::-webkit-scrollbar-track-piece:start {
+  margin-top: 150px;
+  background: transparent;
+} */
 
 /* media queries for mobile view  */
 @media only screen and (max-width: 720px) {
