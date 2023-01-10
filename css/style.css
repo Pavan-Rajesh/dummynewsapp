@@ -3,8 +3,11 @@
   padding: 0;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
 }
-
+body {
+  position: relative;
+}
 .left-navigation .burger {
   width: 50px;
   height: 50px;
@@ -96,9 +99,9 @@ nav {
 /* side nav which opens only when we press the visible hamburger and that is named as class with sidenav  */
 
 nav .side-nav {
-  position: absolute;
+  position: fixed;
   width: 25vw;
-  height: 100vh;
+  height: 150vh;
   background-color: #ffc93c;
   left: -90vh;
   transition: 1s;
@@ -117,6 +120,10 @@ nav .side-nav {
   border-left: 2px solid black;
   box-shadow: 2px 2px 2px 2px black;
   width: 60%;
+}
+.side-nav ul li.quick-navigation {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .side-nav ul li a {
@@ -224,6 +231,21 @@ p {
   justify-content: space-between;
   align-items: center;
   margin: 20px;
+}
+
+.top {
+  /* padding: 20px; */
+  width: auto;
+  height: 20px;
+  background-color: #0081c9;
+  color: white;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-decoration: none;
+  padding: 10px 10px 10px 10px;
+  margin: 40px 10px 0 0;
+  border-radius: 5px;
 }
 
 /* the likes section describes the bottom of the image part that is the icons with like dislike and share instead of star we can keep any icon */
@@ -357,7 +379,7 @@ body::-webkit-scrollbar-thumb {
   .side-nav ul li {
     font-size: 15px;
     color: black;
-    margin: 30px;
+    margin: 13px;
     list-style: none;
   }
   .right-navigation {
@@ -366,9 +388,9 @@ body::-webkit-scrollbar-thumb {
   .min-width-display {
     display: block;
   }
-  nav .side-nav {
-    width: 35vh;
-  }
+  /* nav .side-nav {
+    width: 50vh;
+  } */
 }
 
 @media only screen and (max-width: 720px) and (min-width: 520px) {
@@ -382,8 +404,13 @@ body::-webkit-scrollbar-thumb {
   .right-section {
     width: 200px;
     height: 150px;
-    margin: 10px;
+    margin: 20px;
+    margin-bottom: 30px;
     float: none;
+  }
+  .side-nav ul li.quick-navigation {
+    font-size: 20px;
+    font-weight: bold;
   }
 }
 
@@ -397,5 +424,14 @@ body::-webkit-scrollbar-thumb {
     list-style: none;
     font-size: 17px;
     padding: 20px;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .side-nav ul li {
+    margin: 10px;
+  }
+  nav .side-nav {
+    width: 40vh;
+    height: 150vh;
   }
 }
